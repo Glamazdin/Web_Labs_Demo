@@ -1,0 +1,11 @@
+﻿@model IEnumerable<WebLabs_V2.Models.MenuItem>
+
+<ul class="nav nav-pills">
+    @foreach (var item in Model)
+    {
+        <li class="@item.Active">
+            @Html.ActionLink(item.Name, item.Action, item.Controller)          
+        </li>
+    }
+</ul>
+

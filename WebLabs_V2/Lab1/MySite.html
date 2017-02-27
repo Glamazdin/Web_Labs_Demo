@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <link href="../Content/MySite.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Заголовок -->
+    <div class="header-strip">
+        <!--Панель аутентификации-->
+        <div class="container">
+            <div class="nav navbar-left">
+                <a href="#" class="navbar-link"><span class="glyphicon glyphicon-user"></span>Войти</a>
+                <a href="#" class="navbar-link"><span class="glyphicon glyphicon-plus-sign"></span>Зарегистрироваться</a>
+            </div>
+            <div class="nav navbar-right">               
+                    <a href="#">
+                         0.00 руб. ( 0 )<span class="glyphicon glyphicon-shopping-cart"></span>
+                    </a>                
+            </div>
+        </div> <!--Панель аутентификации (конец)-->
+        <!-- панель навигации-->
+        <div class="container">
+            <div class="navbar navbar-inverse" role="navigation">
+                <div class="logo">
+                    <a class="navbar-brand" href="index.html">Labs-Demo Site</a>
+                </div>
+                <ul class="nav nav-pills">
+                    <li><a href="#">Home</a></li>
+                    <li class="active"><a href="#">Каталог</a></li>
+                    <li><a href="#">Администрирование</a></li>
+                </ul>
+            </div>
+        </div><!--панель навигации (конец)-->
+    </div><!--Заголовок (конец)-->
+    <!--Содержимое сайта-->
+    <div class="main-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-2">
+                    <h2>Лабораторная работа 1</h2>
+                </div>
+            </div>
+            <div class="row">
+                <!--Левая боковая панель-->
+                <div class="col-md-3">
+                    <div class="navbar navbar-default">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href="#">Все категории</a></li>
+                            <li class="active"><a href="#">Кино</a></li>
+                            <li><a href="#">Книги</a></li>
+                            <li><a href="#">Инструмент</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--/Левая боковая панель (конец)-->
+                <!--Основная панель-->
+                <div class="col-md-9">
+                    <h2>Список</h2>
+                    <ol type="A">
+                        <li>элемент 1 списка</li>
+                        <li>элемент 2 списка</li>
+                    </ol>
+                    <hr />
+                    <h2>Форма</h2>
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <label>
+                                    <input type="checkbox" name="1" value="1" /> Чек-бокс 1
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <label>
+                                    <input type="checkbox" name="2" value="2" /> Чек-бокс 2
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <label><input type="radio" checked="checked" name="3" value="1" /> Радио-1</label>
+                                <label><input type="radio" name="3" value="2" /> Радио-2</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="name" class="col-md-2 control-label">Логин:</label>
+                            <div class="col-md-10">
+                                <input type="text" id="name" name="login" class="form-control" placeholder="Введите логин" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="pass" class="col-md-2 control-label">Пароль:</label>
+                            <div class="col-md-10">
+                                <input type="password" id="pass" name="pass" class="form-control" placeholder="Введите пароль" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <button type="submit" class="btn btn-info">Отправить</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--/Основная панель (конец)-->
+            </div>
+        </div>
+    </div>
+    <!--Содержимое сайта (конец)-->
+    <!--Подвал страницы-->
+    <div class="footer-strip">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h6>Kарта сайта</h6>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li class="active"><a href="#">Каталог</a></li>
+                        <li><a href="#">Администрирование</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-md-offset-6">
+                    <h6>Социальные сети</h6>
+                    <a href="http://vk.com" class="social-icon vk"></a>
+                    <a href="http://twitter.com" class="social-icon twitter"></a>
+                    <a href="http://facebook.com" class="social-icon facebook"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Подвал страницы (конец)-->
+    <script src="../Scripts/jquery-1.10.2.js"></script>
+    <script src="../Scripts/bootstrap.js"></script>
+</body>
+</html>

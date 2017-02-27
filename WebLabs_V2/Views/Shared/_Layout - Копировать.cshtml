@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>@ViewBag.Titile</title>
+    <meta charset="utf-8" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="../Content/MySite.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Заголовок -->
+    <div class="header-strip">
+        <!--Панель аутентификации-->
+        <div class="container">
+            <div class="nav navbar-left">
+                <a href=@Url.Action("Login","Account") class="navbar-link"><span class="glyphicon glyphicon-user"></span>Войти</a>
+                <a href=@Url.Action("Register","Account") class="navbar-link"><span class="glyphicon glyphicon-plus-sign"></span>Зарегистрироваться</a>
+            </div>
+            <div class="nav navbar-right">
+                <a href="#">
+                    0.00 руб. ( 0 )<span class="glyphicon glyphicon-shopping-cart"></span>
+                </a>
+            </div>
+        </div> <!--Панель аутентификации (конец)-->
+        <!-- панель навигации-->
+        <div class="container">
+            <div class="navbar navbar-inverse" role="navigation">
+                <div class="logo">
+                    <a class="navbar-brand" href="index.html">Labs-Demo Site</a>
+                </div>
+                <ul class="nav nav-pills">
+                    <li>@Html.ActionLink("Домой","Index","Home")</li>
+                    <li class="active">@Html.ActionLink("Каталог", "List", "Product")</li>
+                    <li>@Html.ActionLink("Администрирование", "Index", "Admin")</li>
+                </ul>
+            </div>
+        </div><!--панель навигации (конец)-->
+    </div><!--Заголовок (конец)-->
+    <!--Содержимое сайта-->
+    <div class="main-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2>@ViewBag.MyText</h2>
+                </div>
+            </div>
+            <div class="row">
+                <!--Левая боковая панель-->
+                <div class="col-md-3">
+                    <div class="navbar navbar-default">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href="#">Все категории</a></li>
+                            <li class="active"><a href="#">Кино</a></li>
+                            <li><a href="#">Книги</a></li>
+                            <li><a href="#">Инструмент</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--/Левая боковая панель (конец)-->
+                <!--Основная панель-->
+                <div class="col-md-9">
+                    @RenderBody()
+                </div>
+                <!--/Основная панель (конец)-->
+            </div>
+        </div>
+    </div>
+    <!--Содержимое сайта (конец)-->
+    <!--Подвал страницы-->
+    <div class="footer-strip">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h6>Kарта сайта</h6>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li class="active"><a href="#">Каталог</a></li>
+                        <li><a href="#">Администрирование</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-md-offset-6">
+                    <h6>Социальные сети</h6>
+                    <a href="http://vk.com" class="social-icon vk"></a>
+                    <a href="http://twitter.com" class="social-icon twitter"></a>
+                    <a href="http://facebook.com" class="social-icon facebook"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Подвал страницы (конец)-->
+    <script src="../Scripts/jquery-1.10.2.js"></script>
+    <script src="../Scripts/bootstrap.js"></script>
+    @RenderSection("Scripts", required:false)
+</body>
+</html>

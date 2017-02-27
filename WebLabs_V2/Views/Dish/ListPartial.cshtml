@@ -1,0 +1,42 @@
+﻿@model WebLabs_V2.Models.PageListViewModel<WebLabs_V2.DAL.Entities.Dish>
+@using System.Text;
+
+@{
+    // объект для "собирания" разметки
+    StringBuilder result = new StringBuilder();
+    // счетчик эскизов в строке
+    var i = 0;
+    TagBuilder row = new TagBuilder("div");
+
+    foreach (var item in Model)
+    {
+        i++;
+        if (i == 1) // для первого элемента в строке создаем новую строку
+        {
+            row = new TagBuilder("div");
+            row.AddCssClass("row");
+            row.AddCssClass("item-row");
+        }
+        row.InnerHtml += Html.Partial("ItemViewPartial", item);
+
+        if (i == 3) // если строка закончена
+        {
+            // добавить строку в разметку
+            result.Append(row.ToString());
+            // обнулить счетчик элементов в строке
+            i = 0;
+        }
+    }
+
+    if (i != 0) // если последняя строка не заполнена
+    {
+        // добавить строку в разметку
+        result.Append(row.ToString());
+    }
+}
+    <!-- Получить готовую разметку -->
+    @MvcHtmlString.Create(result.ToString())
+    @Html.Partial("PagerPartial", Model)
+
+
+

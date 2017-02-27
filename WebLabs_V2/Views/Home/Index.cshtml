@@ -1,0 +1,84 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+
+}
+
+<h2>Список</h2>
+<ol type="A">
+    @for (int i = 1; i < 5; i++)
+    {
+        <li> элемент @i списка </li>
+    }
+</ol>
+<hr />
+<h2>Форма</h2>
+@using (Html.BeginForm("Index", "Home", FormMethod.Get, new { @class = "form-horizontal" }))
+{
+    <div class="col-md-8 col-md-offset-4">
+        @Html.DropDownList("Colors")
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <label>
+                @Html.CheckBox("cBox1")Чек-бокс 1
+            </label>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <label>
+                @Html.CheckBox("cBox2") Чек-бокс 2
+            </label>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <label>@Html.RadioButton("rButton", 1, true) Радио-1</label>
+            <label>@Html.RadioButton("rButton", 2, false) Радио-2</label>
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.Label("Логин:", new
+   {
+       @class = "col-md-2 control-label",
+       @for = "login"
+   })
+        <div class="col-md-10">
+            @Html.TextBox("login", null, new
+       {
+           @class = "form-control",
+           placeholder = "Введите логин"
+       })
+
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.Label("Пароль:", new
+   {
+       @class = "col-md-2 control-label",
+       @for = "pass"
+   })
+        <div class="col-md-10">
+            @Html.TextBox("pass", null, new
+       {
+           @class = "form-control",
+           placeholder = "Введите пароль"
+       })
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <button type="submit" class="btn btn-info">Отправить</button>
+        </div>
+    </div>
+}
+
+@section SidePanel{
+    <div class="alert-success">
+        <h4><i>Пример работы с секциями на странице шаблона</i></h4>
+    </div>
+}
+
+
+
