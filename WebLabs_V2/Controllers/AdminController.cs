@@ -8,8 +8,9 @@ using WebLabs_V2.DAL.Entities;
 
 namespace WebLabs_V2.Controllers
 {
+    [Authorize(Roles ="admin")]
     public class AdminController : Controller
-    {
+    {  
         IRepository<Dish> repository;
         public AdminController(IRepository<Dish> repo)
         {

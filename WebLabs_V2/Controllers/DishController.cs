@@ -14,7 +14,7 @@ namespace WebLabs_V2.Controllers
 {    
     public class DishController : Controller
     {
-        int pageSize = 6 ;
+        int pageSize = 3 ;
         // Инициализация списка объектов:
         //List<Dish> dishes = new List<Dish>
         //{

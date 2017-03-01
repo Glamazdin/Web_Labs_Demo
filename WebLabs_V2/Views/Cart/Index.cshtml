@@ -1,0 +1,28 @@
+﻿@model WebLabs_V2.Models.Cart
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Ваша корзина</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Наименование</th>
+            <th>Количество</th>
+            <th>Всего калорий</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach(var item in Model.GetItems())
+    {
+        <tr>
+            <td>@item.Dish.DishName</td>
+            <td>@item.Quantity</td>
+            <td>@(item.Dish.Calories*item.Quantity)</td>
+        </tr>
+    }
+    </tbody>
+</table>
+<a href="@TempData["returnUrl"]" class="btn btn-default">Вернуться к меню</a>
+
