@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace WebLabs_V2
+namespace WebLabs_V3
 {
     public class FilterConfig
     {

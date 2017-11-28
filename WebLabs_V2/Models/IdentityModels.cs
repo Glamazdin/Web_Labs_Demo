@@ -7,7 +7,7 @@ using System;
 using Microsoft.Owin;
 using Microsoft.AspNet.Identity.Owin;
 
-namespace WebLabs_V2.Models
+namespace WebLabs_V3.Models
 {
     // Чтобы добавить данные профиля для пользователя, можно добавить дополнительные свойства в класс ApplicationUser. Дополнительные сведения см. по адресу: http://go.microsoft.com/fwlink/?LinkID=317594.
     public class ApplicationUser : IdentityUser

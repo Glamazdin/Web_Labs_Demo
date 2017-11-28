@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using WebLabs_V2.DAL.Interfaces;
-using WebLabs_V2.DAL.Entities;
+using WebLabs_V3.DAL.Interfaces;
+using WebLabs_V3.DAL.Entities;
 
-namespace WebLabs_V2.Controllers
+namespace WebLabs_V3.Controllers
 {
     [Authorize(Roles ="admin")]
     public class AdminController : Controller

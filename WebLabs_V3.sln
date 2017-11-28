@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebLabs_V2", "WebLabs_V2\WebLabs_V2.csproj", "{5F19D003-8821-4F21-BB48-AB6A4C7BEE51}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebLabs_V3", "WebLabs_V2\WebLabs_V3.csproj", "{5F19D003-8821-4F21-BB48-AB6A4C7BEE51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebLabs_V2.DAL", "WebLabs_V2.DAL\WebLabs_V2.DAL.csproj", "{BF33D9EA-0E0D-4D04-86CD-B65B02D10312}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebLabs_V3.DAL", "WebLabs_V2.DAL\WebLabs_V3.DAL.csproj", "{BF33D9EA-0E0D-4D04-86CD-B65B02D10312}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebLabs_V3.Tests", "WebLabs_V2.Tests\WebLabs_V3.Tests.csproj", "{1BC9980A-9C6B-45DC-83B1-75E37BFC97D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +23,15 @@ Global
 		{BF33D9EA-0E0D-4D04-86CD-B65B02D10312}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF33D9EA-0E0D-4D04-86CD-B65B02D10312}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF33D9EA-0E0D-4D04-86CD-B65B02D10312}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BC9980A-9C6B-45DC-83B1-75E37BFC97D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BC9980A-9C6B-45DC-83B1-75E37BFC97D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BC9980A-9C6B-45DC-83B1-75E37BFC97D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BC9980A-9C6B-45DC-83B1-75E37BFC97D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {508BE8B6-4E3E-43EC-A3D0-C0CD51832101}
 	EndGlobalSection
 EndGlobal

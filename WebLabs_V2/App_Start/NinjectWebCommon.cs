@@ -1,7 +1,7 @@
-[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(WebLabs_V2.App_Start.NinjectWebCommon), "Start")]
-[assembly: WebActivatorEx.ApplicationShutdownMethodAttribute(typeof(WebLabs_V2.App_Start.NinjectWebCommon), "Stop")]
+[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(WebLabs_V3.App_Start.NinjectWebCommon), "Start")]
+[assembly: WebActivatorEx.ApplicationShutdownMethodAttribute(typeof(WebLabs_V3.App_Start.NinjectWebCommon), "Stop")]
 
-namespace WebLabs_V2.App_Start
+namespace WebLabs_V3.App_Start
 {
     using System;
     using System.Web;
@@ -11,11 +11,11 @@ namespace WebLabs_V2.App_Start
     using Ninject;
     using Ninject.Web.Common;
 
-    using WebLabs_V2.DAL.Entities;
-    using WebLabs_V2.DAL.Interfaces;
-    using WebLabs_V2.DAL.Repositories;
+    using WebLabs_V3.DAL.Entities;
+    using WebLabs_V3.DAL.Interfaces;
+    using WebLabs_V3.DAL.Repositories;
 
-    using WebLabs_V2.Services;
+    using WebLabs_V3.Services;
     using System.Web.Mvc;
     
 

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using WebLabs_V2.DAL.Entities;
+using WebLabs_V3.DAL.Entities;
 
-namespace WebLabs_V2.Models
+namespace WebLabs_V3.Models
 {
     public class CartItem
     {

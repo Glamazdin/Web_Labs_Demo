@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WebLabs_V2.DAL.Entities;
-using WebLabs_V2.DAL.Interfaces;
+using WebLabs_V3.DAL.Entities;
+using WebLabs_V3.DAL.Interfaces;
 using System.Data.Entity;
 
-namespace WebLabs_V2.DAL.Repositories
+namespace WebLabs_V3.DAL.Repositories
 {
     public class EFDishRepository : IRepository<Dish>
     {

@@ -1,4 +1,4 @@
-namespace WebLabs_V2.Migrations
+namespace WebLabs_V3.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;

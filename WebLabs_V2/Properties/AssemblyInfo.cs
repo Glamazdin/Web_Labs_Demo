@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Управление общими сведениями о сборке осуществляется следующим образом
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанных с этой сборкой.
-[assembly: AssemblyTitle("WebLabs_V2")]
+[assembly: AssemblyTitle("WebLabs_V3")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("WebLabs_V2")]
+[assembly: AssemblyProduct("WebLabs_V3")]
 [assembly: AssemblyCopyright("© , 2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace WebLabs_V2
+namespace WebLabs_V3
 {
     public class BundleConfig
     {
@@ -11,7 +11,7 @@ namespace WebLabs_V2
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js",                        
                         "~/Scripts/bootstrap.js",
-                        "~/Scripts/modernizr-*",
+                       
                         "~/Scripts/respond.js",
                         "~/Scripts/jquery.unobtrusive-ajax.js"));
 

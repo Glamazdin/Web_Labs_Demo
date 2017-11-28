@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WebLabs_V2.DAL.Interfaces
+namespace WebLabs_V3.DAL.Interfaces
 {
     public interface IRepository<T> where T:class
     {

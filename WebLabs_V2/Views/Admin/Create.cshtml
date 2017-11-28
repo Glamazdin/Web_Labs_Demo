@@ -1,4 +1,4 @@
-﻿@model WebLabs_V2.DAL.Entities.Dish
+﻿@model WebLabs_V3.DAL.Entities.Dish
 
 @{
     ViewBag.Title = "Добавить";
@@ -76,3 +76,7 @@
 <div>
     @Html.ActionLink("Назад к списку", "Index")
 </div>
+
+@section Scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+    }

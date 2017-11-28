@@ -1,4 +1,4 @@
-﻿@model WebLabs_V2.Models.Cart
+﻿@model WebLabs_V3.Models.Cart
 
 <a href=@Url.Action("Index","Cart",new {returnUrl=Request.Path })>
     @Model.GetTotal() калорий ( @Model.GetItems().Sum(i=>i.Quantity) )

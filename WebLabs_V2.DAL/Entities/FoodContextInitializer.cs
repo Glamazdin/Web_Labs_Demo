@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
 
-namespace WebLabs_V2.DAL.Entities
+namespace WebLabs_V3.DAL.Entities
 {
     class FoodContextInitializer : DropCreateDatabaseIfModelChanges<FoodContext>
     {

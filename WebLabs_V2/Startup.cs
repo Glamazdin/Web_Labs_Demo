@@ -1,8 +1,8 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(WebLabs_V2.Startup))]
-namespace WebLabs_V2
+[assembly: OwinStartupAttribute(typeof(WebLabs_V3.Startup))]
+namespace WebLabs_V3
 {
     public partial class Startup
     {

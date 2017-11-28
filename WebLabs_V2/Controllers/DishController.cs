@@ -5,12 +5,12 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 
-using WebLabs_V2.DAL.Entities;
-using WebLabs_V2.DAL.Interfaces;
-using WebLabs_V2.Models;
+using WebLabs_V3.DAL.Entities;
+using WebLabs_V3.DAL.Interfaces;
+using WebLabs_V3.Models;
 
 
-namespace WebLabs_V2.Controllers
+namespace WebLabs_V3.Controllers
 {    
     public class DishController : Controller
     {

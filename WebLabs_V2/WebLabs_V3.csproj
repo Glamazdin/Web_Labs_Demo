@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -237,6 +238,7 @@
     <Content Include="Lab1\MySite.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -321,9 +323,9 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WebLabs_V2.DAL\WebLabs_V2.DAL.csproj">
+    <ProjectReference Include="..\WebLabs_V2.DAL\WebLabs_V3.DAL.csproj">
       <Project>{bf33d9ea-0e0d-4d04-86cd-b65b02d10312}</Project>
-      <Name>WebLabs_V2.DAL</Name>
+      <Name>WebLabs_V3.DAL</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

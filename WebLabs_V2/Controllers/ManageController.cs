@@ -6,9 +6,9 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using WebLabs_V2.Models;
+using WebLabs_V3.Models;
 
-namespace WebLabs_V2.Controllers
+namespace WebLabs_V3.Controllers
 {
     [Authorize]
     public class ManageController : Controller

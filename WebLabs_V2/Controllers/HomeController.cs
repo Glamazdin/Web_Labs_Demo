@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace WebLabs_V2.Controllers
+namespace WebLabs_V3.Controllers
 {
     public class HomeController : Controller
     {

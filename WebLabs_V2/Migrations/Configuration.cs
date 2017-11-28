@@ -1,19 +1,19 @@
-namespace WebLabs_V2.Migrations
+namespace WebLabs_V3.Migrations
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<WebLabs_V2.Models.ApplicationDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<WebLabs_V3.Models.ApplicationDbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "WebLabs_V2.Models.ApplicationDbContext";
+            ContextKey = "WebLabs_V3.Models.ApplicationDbContext";
         }
 
-        protected override void Seed(WebLabs_V2.Models.ApplicationDbContext context)
+        protected override void Seed(WebLabs_V3.Models.ApplicationDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 

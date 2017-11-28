@@ -80,6 +80,7 @@
     <Compile Include="Entities\Dish.cs" />
     <Compile Include="Entities\FoodContext.cs" />
     <Compile Include="Entities\FoodContextInitializer.cs" />
+    <Compile Include="Interfaces\IDishRepository.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\EFFoodRepository.cs" />

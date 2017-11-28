@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace WebLabs_V2
+namespace WebLabs_V3
 {
     public class RouteConfig
     {

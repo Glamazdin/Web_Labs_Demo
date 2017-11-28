@@ -5,9 +5,9 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
-using WebLabs_V2.Models;
+using WebLabs_V3.Models;
 
-namespace WebLabs_V2
+namespace WebLabs_V3
 {
     public partial class Startup
     {

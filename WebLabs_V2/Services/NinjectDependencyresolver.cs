@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using Ninject;
 
-namespace WebLabs_V2.Services
+namespace WebLabs_V3.Services
 {
     public class NinjectDependencyresolver : IDependencyResolver
     {

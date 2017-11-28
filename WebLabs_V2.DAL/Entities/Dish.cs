@@ -7,7 +7,7 @@ using System.Web.Mvc;
 using System.ComponentModel.DataAnnotations;
  
 
-namespace WebLabs_V2.DAL.Entities
+namespace WebLabs_V3.DAL.Entities
 {
     public class Dish
     {

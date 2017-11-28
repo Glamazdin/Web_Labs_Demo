@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace WebLabs_V2.Models
+namespace WebLabs_V3.Models
 {
     public class MenuItem
     {
